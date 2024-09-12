@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Yousuf Hoda Resume</title>
+</head>
+
+<body>
+
+<h1>Yousuf Hoda</h1>
+<h5>Oakville, ON | (647-833-9992) | yousuf.hoda@torontomu.ca</h5>
+
+<hr>
+
+<h2>Education</h2>
+<ol>
+<li> <b>Oakville Trafalgar High School</b>, 2016-2020 </li>
+<li> <a href="https://www.torontomu.ca/"><b>Toronto Metropolitan University</a> (formerly Ryerson University)</b>, 2020-2025  </li>
+</ol>
+
+<h2> Program</h2>
+<p> <b>Business Technology Management Co-op </b></p>
+<ul>
+    <li> Combines technology, business and management in one program </li>
+    <li> Builds a strong foundation of business and IT principles  </li>
+    <li> Teaches how to analyze business needs, design the necessary technology-driven solutions, and how to communicate the results effectively</li>
+    <li> Oppurtunity to enroll in Co-op and gain real work experience while studying</li>
+</ul>
+
+<h2> Courses </h2>
+<ul>
+    <li> GMS 200 - Intro to Global Management </li>
+    <li> ITM 301 - IT Infrastructure </li>
+    <li> ACC 100 - Intro Finance Accounting </li>
+    <li> ITM 820 - Information System Security and Privacy</li>
+    <li> ITM 618 - Business Intelligence and Analytics</li>
+</ul>
+<p> Course I found most useful? <b>ITM 711 - Cloud Computing</b> </p>
+<blockquote> I found this course the most useful as it provided me with the foundational principles of cloud computing, including cloud infrastructure, services, and deployment models. It gave me the necessary skills to design, implement, and manage cloud-based solutions, which is very helpful for someone who would like to pursue a career in cloud computing. </blockquote>
+
+</body>
+</html> 
