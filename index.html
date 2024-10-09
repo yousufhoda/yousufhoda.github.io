@@ -8,25 +8,38 @@
 <body>
 
 <!-- Lab 5 a. Button-->
+ <!-- This button allows the user to enter their name, which will be displayed on the webpage -->
 <button type="button" id="nameBtn">Enter your name</button>
-<p id="nameOutput"></p>
+<p id="nameOutput"></p> <!-- This paragraph will display the user's name after they enter it-->
 
 <hr> 
 
 <!-- Lab 5 c. Navigation Menu & d. mouseover/mouseout events inline-->
+ <!-- Following section creates a navigation menu with interactive links that change color when hovered over-->
 <div class="nav-container">
+    <!-- First link leads to LinkedIn profile
+        This background color changes when you move the mouse over link, and resets when you move it out-->
     <div class="nav-item" onmouseover="this.style.backgroundColor='#B2F2B2 '; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
-        <a href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank">LinkedIn</a> <!-- LinkedIn link-->
     </div>
+    <!-- This section is for the 'Degree' menu item
+        When mouse is over this link, the background changes, and it returns to normal when the mouse leaves-->
     <div class="nav-item" onmouseover="this.style.backgroundColor='#A4C8E1'; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+        <!-- The Degree link opens a dropdown menu when clicked, which contains links to the program and courses -->
         <a href="#" class="dropdown-toggle">Degree</a>
+
+        <!-- The driodown menu that appears when the 'Degree' link is clicked-->
         <div class="dropdown">
+            <!--Link to the BTM program information-->
             <div class="dropdown-item"><a href="https://www.torontomu.ca/bachelor-of-commerce/programs/business-technology-management/" target="_blank">Program</a></div>
+            <!-- Link to the courses page-->
             <div class="dropdown-item"><a href="https://www.torontomu.ca/calendar/2024-2025/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program" target="_blank">Courses</a></div>
         </div>
     </div>
+    <!-- The third navigation item is a link for contacting the user via email.
+        Same as the others, the background color changes on hover and resets when mouse moves out-->
     <div class="nav-item" onmouseover="this.style.backgroundColor='#DB7093'; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
-        <a href="mailto:yousuf.hoda@torontomu.ca" target="_blank">Contact</a>
+        <a href="mailto:yousuf.hoda@torontomu.ca" target="_blank">Contact</a> <!-- Contant link for email-->
     </div>
 </div>
 
@@ -34,6 +47,8 @@
 <h4>Oakville, ON | (647-833-9992) | yousuf.hoda@torontomu.ca  </h4>
 
 <!-- Lab 5 b. Clickable Image-->
+ <!-- This is my profile picture.
+    When it is clicked it becomes larger-->
 <img id="profileImg" src="image.jpg" alt="Profile Picture" style="width:200px"> 
 
 <hr>
