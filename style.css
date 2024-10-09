@@ -107,60 +107,60 @@ hr {
 
 /* Styling for Lab 5 Navigation menu */
 
-/* Navigation Menu Styling */
+/* Styling for the container that holds all the navigation links */
 .nav-container {
-    display: flex;
-    background-color: #57506d;
-    padding: 10px;
+    display: flex; /* Aligns the nav items horizontally */
+    background-color: #57506d;/*Dark purple background color for nav bar */
+    padding: 10px;/*Adds space inside the container for better spacing*/
 }
 
-/* Styling for individual nav items */
+/* Styling for individual nav items(LinkedIn, Degree, and Contanct */
 .nav-item {
-    position: relative;
-    margin-right: 20px;
+    position: relative;/*Allows dropdown menu to be positioned relative to nav item'*/
+    margin-right: 20px;/*Adds space between nav items*/
 }
 
 /* Styling for nav links */
 .nav-item a {
-    color: #fdfcfc;
-    text-decoration: none;
-    padding: 10px;
+    color: #fdfcfc; /*Light color for text*/
+    text-decoration: none; /*No underline for links when not hovering over*/
+    padding: 10px; /*Adds space around text inside the link*/
 }
 
-/* Hover effect for nav links */
+/* Styling for hovered nav links */
 .nav-item a:hover {
-    text-decoration: underline;
-    color: #f1f1f1;
+    text-decoration: underline; /*Adds underline when hovered*/
+    color: #f1f1f1; /*Changes text color when hovered*/
 }
 
-/* Dropdown menu styling */
+/* Styling for dropdown menu */
 .dropdown {
-    display: none;
-    position: absolute;
-    background-color: #E0B0FF;
-    min-width: 160px;
+    display: none; /* Hides dropdown by default */
+    position: absolute; /* Positions the dropdown below the 'Degree link*/
+    background-color: #E0B0FF; /* Light purple color for dropdown background*/
+    min-width: 160px; /* Dropdown menu will be at least 160px wide */
 }
 
-/* Dropdown item styling */
+/* Styling for dropdown item */
 .dropdown-item {
-    display: block;
-    padding: 10px;
+    display: block; /* Each dropdown item appears in its own line/box */
+    padding: 10px; /* Adds space inside each dropdown item*/
 }
 
-/* Dropdown item link styling */
+/* Styling for dropdown links */
 .dropdown-item a {
-    color: #58355E;
-    text-decoration: none;
-    display: block;
+    color: #58355E; /* Darker purple for item text contrasts well with the lighter purple background*/
+    text-decoration: none; /* Removes underline or any decoration from dropdown link*/
+    display: block; /* Ensures each link takes up full width of dropdown item*/
 }
 
-/* Hover effect for dropdown items */
+/* Styling for hover effect on dropdown items */
 .dropdown-item a:hover {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #f1f1f1; /* Light grey background color on hover*/
+    color: #000; /* Text color is black on hover*/
 }
 
-/* Show dropdown when hovering */
+/* Rule for making the dropdown menu visible when the user hovers over the parent nav item */
 .nav-item:hover .dropdown {
-    display: block;
+    display: block; /* Shows dropdown when user hovers over 'Degree' link */
 }
