@@ -104,3 +104,63 @@ td {
 
 hr {
     color:aliceblue}
+
+/* Styling for Lab 5 Navigation menu */
+
+/* Navigation Menu Styling */
+.nav-container {
+    display: flex;
+    background-color: #57506d;
+    padding: 10px;
+}
+
+/* Styling for individual nav items */
+.nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Styling for nav links */
+.nav-item a {
+    color: #fdfcfc;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Hover effect for nav links */
+.nav-item a:hover {
+    text-decoration: underline;
+    color: #f1f1f1;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #E0B0FF;
+    min-width: 160px;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+    display: block;
+    padding: 10px;
+}
+
+/* Dropdown item link styling */
+.dropdown-item a {
+    color: #58355E;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* Show dropdown when hovering */
+.nav-item:hover .dropdown {
+    display: block;
+}
