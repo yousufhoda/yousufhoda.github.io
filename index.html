@@ -1,14 +1,40 @@
  <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
 <title>Yousuf Hoda Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- Lab 5 a. Button-->
+<button type="button" id="nameBtn">Enter your name</button>
+<p id="nameOutput"></p>
+
+<hr> 
+
+<!-- Lab 5 c. Navigation Menu & d. mouseover/mouseout events inline-->
+<div class="nav-container">
+    <div class="nav-item" onmouseover="this.style.backgroundColor='#B2F2B2 '; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+        <a href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank">LinkedIn</a>
+    </div>
+    <div class="nav-item" onmouseover="this.style.backgroundColor='#A4C8E1'; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+        <a href="#" class="dropdown-toggle">Degree</a>
+        <div class="dropdown">
+            <div class="dropdown-item"><a href="https://www.torontomu.ca/bachelor-of-commerce/programs/business-technology-management/" target="_blank">Program</a></div>
+            <div class="dropdown-item"><a href="https://www.torontomu.ca/calendar/2024-2025/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program" target="_blank">Courses</a></div>
+        </div>
+    </div>
+    <div class="nav-item" onmouseover="this.style.backgroundColor='#DB7093'; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+        <a href="mailto:yousuf.hoda@torontomu.ca" target="_blank">Contact</a>
+    </div>
+</div>
+
 <h1>Yousuf Hoda</h1>
-<h4>Oakville, ON | (647-833-9992) | yousuf.hoda@torontomu.ca</h4>
+<h4>Oakville, ON | (647-833-9992) | yousuf.hoda@torontomu.ca  </h4>
+
+<!-- Lab 5 b. Clickable Image-->
+<img id="profileImg" src="image.jpg" alt="Profile Picture" style="width:200px"> 
 
 <hr>
 
@@ -78,7 +104,6 @@
         </tr>
     </table>
 
+<script src="lab5submission.js"></script>
 </body>
-
-</html> 
-
+</html>
