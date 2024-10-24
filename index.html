@@ -5,12 +5,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- Lab 7. Question C - Submit and Clear/Reset buttons-->
+ <!-- 
+    The form has two buttons:
+    - "Submit": Stores the input data (name, email, message, contact method, and subscription status) in local storage.
+    - "Clear/Reset": Resets all input fields in the form and clears the data from local storage.
+    -->
 <body>
 
 <!-- Lab 5 a. Button-->
  <!-- This button allows the user to enter their name, which will be displayed on the webpage -->
-<button type="button" id="nameBtn">Enter your name</button>
+    <button type="button" id="nameBtn">Enter your name</button> 
 <p id="nameOutput"></p> <!-- This paragraph will display the user's name after they enter it-->
+
 
 <hr> 
 
@@ -19,12 +26,12 @@
 <div class="nav-container">
     <!-- First link leads to LinkedIn profile
         This background color changes when you move the mouse over link, and resets when you move it out-->
-    <div class="nav-item" onmouseover="this.style.backgroundColor='#B2F2B2 '; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+    <div class="nav-item">
         <a href="https://www.linkedin.com/in/yousuf-hoda-4924741ab" target="_blank">LinkedIn</a> <!-- LinkedIn link-->
     </div>
     <!-- This section is for the 'Degree' menu item
         When mouse is over this link, the background changes, and it returns to normal when the mouse leaves-->
-    <div class="nav-item" onmouseover="this.style.backgroundColor='#A4C8E1'; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+    <div class="nav-item">
         <!-- The Degree link opens a dropdown menu when clicked, which contains links to the program and courses -->
         <a href="#" class="dropdown-toggle">Degree</a>
 
@@ -38,19 +45,19 @@
     </div>
     <!-- The third navigation item is a link for contacting the user via email.
         Same as the others, the background color changes on hover and resets when mouse moves out-->
-    <div class="nav-item" onmouseover="this.style.backgroundColor='#DB7093'; this.style.color='#000';" onmouseout="this.style.backgroundColor=''; this.style.color='';">
+    <div class="nav-item">
         <a href="mailto:yousuf.hoda@torontomu.ca" target="_blank">Contact</a> <!-- Contant link for email-->
     </div>
 </div>
 
-<h1>Yousuf Hoda</h1>
-<h4>Oakville, ON | (647-833-9992) | yousuf.hoda@torontomu.ca  </h4>
+<center> <h1>Yousuf Hoda</h1> 
+<P> Oakville, ON | (647-833-9992) | yousuf.hoda@torontomu.ca </P>
 
 <!-- Lab 5 b. Clickable Image-->
  <!-- This is my profile picture.
     When it is clicked it becomes larger-->
 <img id="profileImg" src="image.jpg" alt="Profile Picture" style="width:200px"> 
-
+</center>
 <hr>
 
 <h2>Education</h2>
@@ -119,6 +126,78 @@
         </tr>
     </table>
 
+<!-- Lab 7 - Forms-->
+
+<h2> Contact Form </h2>
+
+<form id="myForm">
+    <!-- 1. Single Text Field -->
+    <p>
+        <label for="username">Name:</label>
+        <!-- Text input field for users name-->
+        <input id="username" type="text" placeholder="Enter your name">
+    </p>
+
+    <!-- 2. Email Text Field -->
+    <p>
+        <label for="email">Email:</label>
+        <!-- Email input field -->
+        <input id="email" type="email" placeholder="Enter your email">
+    </p>
+
+    <!-- 3. Multiple Text Field -->
+    <p>
+        <label for="message">Message:</label>
+        <!-- Text area for the user to write a long message-->
+        <textarea id="message" name="message" rows="4" cols="50">Enter your message here</textarea>
+    </p>
+
+    <!-- 4. Radio Buttons -->
+    <p>
+        <!-- Radio button for selecting email as contact method-->
+        <input type="radio" id="contactEmail" value="email" name="contactMethod" checked> Contact via Email
+        <!-- Radio button for selecting phone as contact method-->
+        <input type="radio" id="contactPhone" value="phone" name="contactMethod"> Contact via Phone
+    </p>
+
+    <!-- 5. Checkbox -->
+    <p>
+        <!-- Checkbox for subscribing to my newsletter-->
+        <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to Newsletter
+    </p>
+
+    <!-- 6. Dropdown Menu 
+     <select> tag necessary as it defines the drop-down list in the HTML Form-->
+    <!-- Dropdown menu with multiple options-->
+    <p>
+        <label for="contactReason">Reason for Contact:</label>
+        <select id="contactReason" name="contactReason">
+            <option value="general">General Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="support">Support</option>
+        </select>
+    </p>
+
+    <!-- 7. Submit Button -->
+    <p>
+        <!-- Submit button to submit form-->
+        <input type="submit" value="Submit">
+    </p>
+
+    <!-- 8. Reset Button -->
+    <p>
+        <!-- Reset button to clear the form fields-->
+        <input type="reset" value="Clear">
+    </p>
+</form>
+
+<footer>
+    <!-- Footer for copyright information-->
+    <p>© 2024 Yousuf Hoda. All Rights Reserved.</p>
+</footer>
+
+<!-- Link to external JavaScript files-->
 <script src="main.js"></script>
+<script src="session.js"></script>
 </body>
 </html>
