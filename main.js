@@ -42,3 +42,37 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 });
 
+// Lab 7 - Forms 
+// Function runs only when page is fully loaded
+window.onload = function() {
+    // Access form using its ID
+    var form = document.getElementById("myForm");
+    // When form is submitted
+    form.onsubmit = function(event) {
+        event.preventDefault(); // Prevents form from submitting the default way
+
+        // Access user input data
+        var username = document.getElementById("username").value; //Gets value of name input field
+        var email = document.getElementById("email").value; // Gets value of email input field
+        var message = document.getElementById("message").value; // Gets vakye of message textarea
+        var contactMethod = document.querySelector('input[name="contactMethod"]:checked').value; // Gets the selected contact method
+        var subscribe = document.getElementById("subscribe").checked ? 'yes' : 'no'; // Checks if checkbox is checked 
+
+        // Store data in localStorage as per the lab instructions
+        localStorage.setItem("username", username); // Stores username
+        localStorage.setItem("email", email); // stores email
+        localStorage.setItem("message", message); // stores message
+        localStorage.setItem("contactMethod", contactMethod); // stores preffered contact method
+        localStorage.setItem("subscribe", subscribe); // Scored subcription decision 
+
+        // Confirmation of submission
+        alert("Form submitted and data stored in localStorage!");
+    };
+    // When the form is reset
+    form.onreset = function() {
+        // Clear the localStorage when the form is reset
+        localStorage.clear();
+        //Provide confirmation message to user
+        alert("Form cleared and localStorage reset.");
+    };
+};
