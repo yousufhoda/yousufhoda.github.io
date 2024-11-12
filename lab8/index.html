@@ -10,61 +10,62 @@
         body {
             font-family: 'Montserrat', sans-serif;
             font-size: 16px;
-            background-color: #201d25;
-            color: #cabebe;
+            background-color: #201d25; /* Dark background for contrast */
+            color: #cabebe; /* Light text color */
             margin: 0;
             padding: 20px;
-            transition: background-color 0.3s, color 0.3s;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center; /* Center content horizontally */
             min-height: 100vh;
-            text-align: center; /* Ensure text is centered */
+            text-align: center; /* Center-align text for better readability */
         }
 
-        /* Headings */
+        /* Styling for Headings */
         h1 {
-            font-size: 48px; /* Increased font size */
+            font-size: 48px; /* Large heading size */
             font-weight: bold;
-            color: #d3d2d0;
+            color: #d3d2d0; /* Light color for better visibility */
             margin-bottom: 40px;
         }
 
+        /* Styling for Captions under images and videos */
         figcaption {
             font-style: italic;
             margin-top: 10px;
-            margin-bottom: 20px; /* Added margin to create space between citation and buttons */
+            margin-bottom: 20px; /* Space between caption and buttons */
             color: #dfd3eb;
         }
 
-        /* Button Container Styling */
+        /* Styling for Button Containers */
         .div-links {
             padding: 15px 25px;
-            background-color: #26222c;
-            border: 2px solid #eceae2;
+            background-color: #26222c; /* Dark background for buttons */
+            border: 2px solid #eceae2; /* Light border */
             border-radius: 5px;
             margin-bottom: 20px;
             display: flex;
-            justify-content: center; /* Center buttons horizontally */
+            justify-content: center; /* Center-align buttons */
             align-items: center;
             width: auto;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease; /* Animation on hover */
         }
 
         .div-links:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Slight zoom effect on hover */
         }
 
-        /* Button Styling */
+        /* Styling for Buttons */
         button {
             margin: 10px;
             padding: 15px 25px;
-            background-color: #A4D4AE;
-            color: #1D1D1D;
+            background-color: #A4D4AE; /* Soft green color for buttons */
+            color: #1D1D1D; /* Dark text color for readability */
             border: none;
             border-radius: 5px;
-            cursor: pointer;
+            cursor: pointer; /* Pointer cursor on hover */
             font-size: 16px;
             transition: background-color 0.3s, transform 0.3s;
             text-transform: uppercase;
@@ -72,48 +73,49 @@
         }
 
         button:hover {
-            background-color: #99D17B;
-            transform: translateY(-2px);
+            background-color: #99D17B; /* Slightly darker green on hover */
+            transform: translateY(-2px); /* Lift effect on hover */
         }
 
-        /* Image Styling */
+        /* Styling for Image Containers */
         .image-container {
             padding: 20px;
-            background-color: #3d3346;
-            border: 2px solid #e7e3dc;
+            background-color: #3d3346; /* Background color for image containers */
+            border: 2px solid #e7e3dc; /* Border around images */
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
             margin: 20px auto;
             max-width: 600px;
             width: 100%;
         }
 
+        /* Styling for Images */
         .responsive-img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
 
-        /* Ensuring images have the same height */
+        /* Ensure images have the same height */
         .responsive-img {
-            height: 300px; /* Set a fixed height for images */
-            object-fit: cover; /* Maintain aspect ratio and fill the container */
+            height: 300px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensure the image fills the container */
         }
 
-        /* Color-Blind Friendly Mode */
+        /* Color-Blind Friendly Mode Styles */
         .color-blind-mode {
-            background-color: #F4F1DE !important;
+            background-color: #F4F1DE !important; /* Light background for better visibility */
         }
 
         .color-blind-mode body {
-            color: #053041 !important;  /* Dark blue text for better contrast */
+            color: #053041 !important; /* Dark blue text for improved contrast */
         }
 
         .color-blind-mode h1,
         .color-blind-mode p,
         .color-blind-mode button,
         .color-blind-mode figcaption {
-            color: #053041 !important;  /* Apply dark blue color to text elements */
+            color: #053041 !important;
         }
 
         .color-blind-mode .div-links {
@@ -126,25 +128,17 @@
             border-color: #264653;
         }
 
-        /* Flexbox container for horizontal alignment */
+        /* Flexbox for arranging images horizontally */
         .image-row {
             display: flex;
-            justify-content: space-between;  /* Space out the images evenly */
-            gap: 20px;  /* Optional: Add space between the images */
-            flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap; /* Wrap images on smaller screens */
             margin-top: 20px;
             margin-bottom: 20px;
         }
 
-        /* Image container for individual images */
-        .image-container {
-            flex: 1;  /* Make the images flexible */
-            max-width: 33%;  /* Limit each image container to 1/3 of the row */
-            box-sizing: border-box;  /* Ensure padding doesn't overflow */
-            text-align: center;
-        }
-
-        /* Style for the horizontal rule */
+        /* Horizontal line style */
         hr {
             border: 0;
             border-top: 2px solid #e7e3dc;
@@ -155,7 +149,7 @@
 </head>
 
 <body>
-    <!-- Heading -->
+    <!-- Page Heading -->
     <h1>Accessibility Lab</h1>
 
     <!-- Part A: Embedded Video with Caption -->
@@ -163,7 +157,7 @@
         <iframe src="https://archive.org/embed/youtube-Om5e3S7tU2s" width="750px" height="410" frameborder="0" allowfullscreen></iframe>
     </div>
     <figcaption>
-        Liverpool FC. (2023, November 23). <i>Alexander-Arnold & Haaland Score in Thrilling Draw | Man City 1-1 Liverpool | Highlights</i> [Video]. 
+        Liverpool FC. (2023, November 23). <i>Alexander-Arnold & Haaland Score in Thrilling Draw | Man City 1-1 Liverpool | Highlights</i> [Video].
         Internet Archive. <a href="https://archive.org/details/youtube-Om5e3S7tU2s" target="_blank">https://archive.org/details/youtube-Om5e3S7tU2s</a>
     </figcaption>
 
@@ -173,7 +167,7 @@
         <button onclick="resetText()">Reset Text Size</button>
     </div>
 
-    <!-- Part C: Change Color Mode Buttons -->
+    <!-- Part C: Toggle Color Mode Button -->
     <div class="div-links">
         <button onclick="toggleColorBlindMode()">Toggle Color Mode</button>
     </div>
@@ -199,25 +193,28 @@
         </div>
     </div>
 
-    <!-- JavaScript -->
+    <!-- JavaScript Functions -->
     <script>
+        // Increase the font size for better readability
         function increaseText() {
             document.body.style.fontSize = '18pt';
         }
 
+        // Reset the text size to default
         function resetText() {
             document.body.style.fontSize = '14pt';
         }
 
+        // Toggle color-blind mode for better accessibility
         function toggleColorBlindMode() {
             document.body.classList.toggle('color-blind-mode');
         }
 
+        // Show the alt text of images as an alert
         function showAltText(imgId) {
             const img = document.getElementById(imgId);
-            alert(img.alt); // This will trigger the alert with the alt text
+            alert(img.alt);
         }
-
     </script>
 </body>
 
