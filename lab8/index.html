@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8 Accessibility</title>
+    <style>
+        /* General Body Styling (Default Mode) */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14pt;
+            background-color: #201d25;
+            color: #cabebe;
+            margin: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 36pt;
+            font-weight: bold;
+            color: #d3d2d0;
+            text-align: center;
+        }
+
+        /* Centering and Styling the Video */
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-top: 10px;
+            text-align: center;
+            color: #dfd3eb;
+        }
+
+        /* Button Container Styling */
+        .div-links {
+            padding: 20px;
+            background-color: #26222c;
+            border: 2px solid #eceae2;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Button Styling */
+        button {
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #A4D4AE;
+            color: #1D1D1D;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14pt;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #99D17B;
+            transform: translateY(-2px);
+        }
+
+        /* Image Styling */
+        .image-container {
+            padding: 20px;
+            background-color: #3d3346;
+            border: 2px solid #e7e3dc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .responsive-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Color-Blind Friendly Mode */
+        .color-blind-mode {
+            background-color: #F4F1DE !important;
+            color: #053041 !important;
+        }
+
+        .color-blind-mode .div-links {
+            background-color: #E9C46A !important;
+            border-color: #2A9D8F;
+        }
+
+        .color-blind-mode .image-container {
+            background-color: #E76F51 !important;
+            border-color: #264653;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Heading -->
+    <h1>Accessibility Lab</h1>
+
+    <!-- Part A: Embedded Video with Caption -->
+    <div class="video-container">
+        <iframe src="https://archive.org/embed/youtube-Om5e3S7tU2s" width="640" height="480" frameborder="0" allowfullscreen></iframe>
+        <figcaption>
+            Liverpool FC. (2023, November 23). <i>Alexander-Arnold & Haaland Score in Thrilling Draw | Man City 1-1 Liverpool | Highlights</i> [Video]. 
+            Internet Archive. <a href="https://archive.org/details/youtube-Om5e3S7tU2s" target="_blank">https://archive.org/details/youtube-Om5e3S7tU2s</a>
+        </figcaption>
+    </div>
+
+    <!-- Part B: Text Resize Buttons -->
+    <div class="div-links">
+        <button onclick="increaseText()">Enlarge Text</button>
+        <button onclick="resetText()">Reset Text Size</button>
+    </div>
+
+    <!-- Part C: Change Color Mode Buttons -->
+    <div class="div-links">
+        <button onclick="toggleColorBlindMode()">Toggle Color Mode</button>
+    </div>
+
+    <!-- Part D: Images with Alt Text and Captions -->
+    <div class="image-container">
+        <img src="cat.jpg" alt="Orange cat lying on the carpet with his belly up." id="img1" class="responsive-img">
+        <figcaption>Image 1: Cat lying with its belly up.</figcaption>
+        <button onclick="showAltText('img1')">Show Alt Text</button>
+    </div>
+
+    <div class="image-container">
+        <img src="sunrise.jpg" alt="Sunrise at the beach of Marie Curtis Park." id="img2" class="responsive-img">
+        <figcaption>Image 2: Sunrise at the beach of Marie Curtis Park.</figcaption>
+        <button onclick="showAltText('img2')">Show Alt Text</button>
+    </div>
+
+    <div class="image-container">
+        <img src="lakemoraine.jpg" alt="Moraine Lake with its vibrant turquoise water and towering snow-capped peaks." id="img3" class="responsive-img">
+        <figcaption>Image 3: Moraine Lake with turquoise water.</figcaption>
+        <button onclick="showAltText('img3')">Show Alt Text</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function increaseText() {
+            document.body.style.fontSize = '18pt';
+        }
+
+        function resetText() {
+            document.body.style.fontSize = '14pt';
+        }
+
+        function toggleColorBlindMode() {
+            document.body.classList.toggle('color-blind-mode');
+        }
+
+        function showAltText(imgId) {
+            const img = document.getElementById(imgId);
+            alert(img.alt);
+        }
+    </script>
+</body>
+
+</html>
