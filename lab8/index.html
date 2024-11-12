@@ -10,8 +10,8 @@
         body {
             font-family: 'Montserrat', sans-serif;
             font-size: 16px;
-            background-color: #201d25; /* Dark background for contrast */
-            color: #cabebe; /* Light text color */
+            background-color: #201d25;
+            color: #cabebe;
             margin: 0;
             padding: 20px;
             transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
@@ -20,14 +20,14 @@
             justify-content: flex-start;
             align-items: center; /* Center content horizontally */
             min-height: 100vh;
-            text-align: center; /* Center-align text for better readability */
+            text-align: center; /* Ensure text is centered */
         }
 
         /* Styling for Headings */
         h1 {
-            font-size: 48px; /* Large heading size */
+            font-size: 48px; /* Increased font size */
             font-weight: bold;
-            color: #d3d2d0; /* Light color for better visibility */
+            color: #d3d2d0;
             margin-bottom: 40px;
         }
 
@@ -35,37 +35,37 @@
         figcaption {
             font-style: italic;
             margin-top: 10px;
-            margin-bottom: 20px; /* Space between caption and buttons */
+            margin-bottom: 20px; /* Added margin to create space between citation and buttons */
             color: #dfd3eb;
         }
 
-        /* Styling for Button Containers */
+        /* Button Container Styling */
         .div-links {
             padding: 15px 25px;
-            background-color: #26222c; /* Dark background for buttons */
-            border: 2px solid #eceae2; /* Light border */
+            background-color: #26222c;
+            border: 2px solid #eceae2;
             border-radius: 5px;
             margin-bottom: 20px;
             display: flex;
-            justify-content: center; /* Center-align buttons */
+            justify-content: center; /* Center buttons horizontally */
             align-items: center;
             width: auto;
-            transition: transform 0.3s ease; /* Animation on hover */
+            transition: transform 0.3s ease;
         }
 
         .div-links:hover {
-            transform: scale(1.05); /* Slight zoom effect on hover */
+            transform: scale(1.05);
         }
 
-        /* Styling for Buttons */
+        /* Button Styling */
         button {
             margin: 10px;
             padding: 15px 25px;
-            background-color: #A4D4AE; /* Soft green color for buttons */
-            color: #1D1D1D; /* Dark text color for readability */
+            background-color: #A4D4AE;
+            color: #1D1D1D;
             border: none;
             border-radius: 5px;
-            cursor: pointer; /* Pointer cursor on hover */
+            cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s, transform 0.3s;
             text-transform: uppercase;
@@ -73,49 +73,48 @@
         }
 
         button:hover {
-            background-color: #99D17B; /* Slightly darker green on hover */
-            transform: translateY(-2px); /* Lift effect on hover */
+            background-color: #99D17B;
+            transform: translateY(-2px);
         }
 
-        /* Styling for Image Containers */
+        /* Image Styling */
         .image-container {
             padding: 20px;
-            background-color: #3d3346; /* Background color for image containers */
-            border: 2px solid #e7e3dc; /* Border around images */
+            background-color: #3d3346;
+            border: 2px solid #e7e3dc;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 20px auto;
             max-width: 600px;
             width: 100%;
         }
 
-        /* Styling for Images */
         .responsive-img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
 
-        /* Ensure images have the same height */
+        /* Ensuring images have the same height */
         .responsive-img {
-            height: 300px; /* Fixed height for consistency */
-            object-fit: cover; /* Ensure the image fills the container */
+            height: 300px; /* Set a fixed height for images */
+            object-fit: cover; /* Maintain aspect ratio and fill the container */
         }
 
-        /* Color-Blind Friendly Mode Styles */
+        /* Color-Blind Friendly Mode */
         .color-blind-mode {
-            background-color: #F4F1DE !important; /* Light background for better visibility */
+            background-color: #F4F1DE !important;
         }
 
         .color-blind-mode body {
-            color: #053041 !important; /* Dark blue text for improved contrast */
+            color: #053041 !important;  /* Dark blue text for better contrast */
         }
 
         .color-blind-mode h1,
         .color-blind-mode p,
         .color-blind-mode button,
         .color-blind-mode figcaption {
-            color: #053041 !important;
+            color: #053041 !important;  /* Apply dark blue color to text elements */
         }
 
         .color-blind-mode .div-links {
@@ -128,17 +127,25 @@
             border-color: #264653;
         }
 
-        /* Flexbox for arranging images horizontally */
+        /* Flexbox container for horizontal alignment */
         .image-row {
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap; /* Wrap images on smaller screens */
+            justify-content: space-between;  /* Space out the images evenly */
+            gap: 20px;  /* Optional: Add space between the images */
+            flex-wrap: wrap;  /* Allow wrapping on smaller screens */
             margin-top: 20px;
             margin-bottom: 20px;
         }
 
-        /* Horizontal line style */
+        /* Image container for individual images */
+        .image-container {
+            flex: 1;  /* Make the images flexible */
+            max-width: 33%;  /* Limit each image container to 1/3 of the row */
+            box-sizing: border-box;  /* Ensure padding doesn't overflow */
+            text-align: center;
+        }
+
+        /* Style for the horizontal rule */
         hr {
             border: 0;
             border-top: 2px solid #e7e3dc;
@@ -149,7 +156,7 @@
 </head>
 
 <body>
-    <!-- Page Heading -->
+    <!-- Heading -->
     <h1>Accessibility Lab</h1>
 
     <!-- Part A: Embedded Video with Caption -->
@@ -157,7 +164,7 @@
         <iframe src="https://archive.org/embed/youtube-Om5e3S7tU2s" width="750px" height="410" frameborder="0" allowfullscreen></iframe>
     </div>
     <figcaption>
-        Liverpool FC. (2023, November 23). <i>Alexander-Arnold & Haaland Score in Thrilling Draw | Man City 1-1 Liverpool | Highlights</i> [Video].
+        Liverpool FC. (2023, November 23). <i>Alexander-Arnold & Haaland Score in Thrilling Draw | Man City 1-1 Liverpool | Highlights</i> [Video]. 
         Internet Archive. <a href="https://archive.org/details/youtube-Om5e3S7tU2s" target="_blank">https://archive.org/details/youtube-Om5e3S7tU2s</a>
     </figcaption>
 
@@ -167,7 +174,7 @@
         <button onclick="resetText()">Reset Text Size</button>
     </div>
 
-    <!-- Part C: Toggle Color Mode Button -->
+    <!-- Part C: Change Color Mode Buttons -->
     <div class="div-links">
         <button onclick="toggleColorBlindMode()">Toggle Color Mode</button>
     </div>
@@ -193,8 +200,9 @@
         </div>
     </div>
 
-    <!-- JavaScript Functions -->
+    <!-- JavaScript -->
     <script>
+
         // Increase the font size for better readability
         function increaseText() {
             document.body.style.fontSize = '18pt';
@@ -213,8 +221,9 @@
         // Show the alt text of images as an alert
         function showAltText(imgId) {
             const img = document.getElementById(imgId);
-            alert(img.alt);
+            alert(img.alt); // This will trigger the alert with the alt text
         }
+
     </script>
 </body>
 
